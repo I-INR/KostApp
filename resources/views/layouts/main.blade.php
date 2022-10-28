@@ -122,11 +122,11 @@
 
   <!-- Avaible Kost -->
 
-  <section class="blog top" id="blog">
+  <section class="available top" id="available">
     <div class="container">
       <div class="heading">
-        <h5>OUR BLOG</h5>
-        <h3>News & articles updates</h3>
+        <h5>OUR KOST</h5>
+        <h3>Some Top Our Kost</h3>
       </div>
 
       <div class="content grid mtop">
@@ -495,7 +495,7 @@
       </div>
     </div>
   </footer>
-  
+
   <!-- End Footer-->
 </body>
 </html>
