@@ -1,10 +1,11 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\masing;
 
+use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
-class AboutkostController extends Controller
+class TestmonkostController extends Controller
 {
     /**
      * Display a listing of the resource.

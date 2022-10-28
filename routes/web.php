@@ -1,6 +1,12 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\masing\AboutkostController;
+use App\Http\Controllers\masing\TestmonkostController;
+use App\Http\Controllers\masing\FasilikostController;
+use App\Http\Controllers\FooterkostController;
+use App\Http\Controllers\TestmonController;
+use App\Http\Controllers\StokostController;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,5 +20,11 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('layouts.main');
 });
+
+// Route::get('/', function () {
+//     return view('welcome');
+// });
+
+
