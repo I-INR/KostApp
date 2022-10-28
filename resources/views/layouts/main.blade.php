@@ -57,7 +57,7 @@
 
   <section class="home" id="home">
     <div class="container">
-      <h1></h1>
+      <h1>SKOST</h1>
       <p>Discover the place where you have fun & enjoy a lot</p>
   </section>
 
@@ -84,7 +84,7 @@
           <p> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
         </div>
         <div class="right">
-          <img src="{{ asset('assets/img/a.png') }}" alt="">
+          <img src="{{ asset('assets/img/b2.jpg') }}" alt="">
         </div>
       </div>
     </div>
@@ -133,61 +133,48 @@
         <div class="box">
           <div class="img">
             <img src="{{ asset('assets/img/new1.jpg') }}" alt="">
-            <span>HOTEL</span>
+            {{-- <span>HOTEL</span> --}}
           </div>
           <div class="text">
-            <div class="flex">
-              <i class="far fa-user"> <label>Admin</label> </i>
-              <i class="far fa-comments"> <label>Comment</label> </i>
-            </div>
             <h3>Celebrating Decade Years Of Hotel In 2020</h3>
             <p> Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            <a href="#">Read More <i class='far fa-long-arrow-alt-right'></i></a>
+            <a href="#">Read More </a>
           </div>
         </div>
+
         <div class="box">
           <div class="img">
             <img src="{{ asset('assets/img/new1.jpg') }}" alt="">
-            <span>HOTEL</span>
+            {{-- <span>HOTEL</span> --}}
           </div>
           <div class="text">
-            <div class="flex">
-              <i class="far fa-user"> <label>Admin</label> </i>
-              <i class="far fa-comments"> <label>Comment</label> </i>
-            </div>
             <h3>Celebrating Decade Years Of Hotel In 2020</h3>
             <p> Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            <a href="#">Read More <i class='far fa-long-arrow-alt-right'></i> </a>
+            <a href="#">Read More </a>
           </div>
         </div>
+
         <div class="box">
           <div class="img">
             <img src="{{ asset('assets/img/new1.jpg') }}" alt="">
-            <span>HOTEL</span>
+            {{-- <span>HOTEL</span> --}}
           </div>
           <div class="text">
-            <div class="flex">
-              <i class="far fa-user"> <label>Admin</label> </i>
-              <i class="far fa-comments"> <label>Comment</label> </i>
-            </div>
             <h3>Celebrating Decade Years Of Hotel In 2020</h3>
             <p> Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            <a href="#">Read More <i class='far fa-long-arrow-alt-right'></i> </a>
+            <a href="#">Read More </a>
           </div>
         </div>
+
         <div class="box">
           <div class="img">
             <img src="{{ asset('assets/img/new1.jpg') }}" alt="">
-            <span>HOTEL</span>
+            {{-- <span>HOTEL</span> --}}
           </div>
           <div class="text">
-            <div class="flex">
-              <i class="far fa-user"> <label>Admin</label> </i>
-              <i class="far fa-comments"> <label>Comment</label> </i>
-            </div>
             <h3>Celebrating Decade Years Of Hotel In 2020</h3>
             <p> Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            <a href="#">Read More <i class='far fa-long-arrow-alt-right'></i> </a>
+            <a href="#">Read More </a>
           </div>
         </div>
       </div>
