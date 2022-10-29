@@ -59,7 +59,7 @@ a {
 /*-------------head--------- */
 /*-------------header--------- */
 header {
-  background: #06283D;
+  background: #ffffff;
   padding: 15px 0 15px 0;
   color: white;
   position: relative;
@@ -100,7 +100,7 @@ header li {
 
 header ul li a {
   font-size: 15px;
-  color: white;
+  color: rgb(0, 0, 0);
   text-transform: uppercase;
   font-weight: 500;
   transition: 0.5s;
@@ -128,6 +128,13 @@ header .head_contact i {
   transform: rotate(-45deg);
   border: 5px solid #ECE3D2;
   font-size: 30px;
+}
+
+.logo a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  font-size: 20px;
 }
 
 
@@ -206,7 +213,8 @@ header .head_contact i {
 }
 
 .home {
-  background-image: url("/assets/img/heroimg.jpg") ;
+  /* background-image: url("/assets/img/heroimg.jpg") ; */
+  background-color: #fff;
   height: 100vh;
   background-attachment: fixed;
   background-position: center;
@@ -218,12 +226,12 @@ header .head_contact i {
 .home h1 {
   font-family: 'Patrick Hand', cursive;
   font-size: 150px;
-  color: white;
+  color: rgb(0, 0, 0);
   padding-top: 10%;
 }
 
 .home p {
-  color: white;
+  color: rgb(255, 255, 255);
 }
 
 .home .content {
@@ -428,13 +436,12 @@ p {
   -o-border-radius: 5px;
 }
 
-/*------------available------------*/
-/*------------map------------*/
-.map iframe {
-  width: 100%;
-}
 
-/*------------map------------*/
+
+
+
+
+
 /*------------footer------------*/
 footer {
   background: black;
@@ -616,7 +623,7 @@ footer .content {
 @media only screen and (max-width:512px) {
 
   .home {
-    background-image: url("../image/home.png");
+    background-image: url("/assets/img/heroimg.jpg");
     height: 100vh;
     background-attachment: fixed;
     background-position: center;
@@ -626,6 +633,10 @@ footer .content {
   }
   .nav-menu {
     top: 12rem;
+  }
+  
+  .homesmall {
+    padding:  140px 0 0 0;
   }
 
   .head {
@@ -649,10 +660,6 @@ footer .content {
   .wrapper2 .content,
   .grid {
     grid-template-columns: repeat(1, 1fr);
-  }
-
-  .home {
-    height: 140vh;
   }
 
   .home .grid {
@@ -718,9 +725,17 @@ footer .content {
 
 .logo a {
   text-decoration: none;
-  color: white;
+  color: rgb(0, 0, 0);
   font-weight: bold;
   font-size: 20px;
+}
+
+@media only screen and (max-width: 634px) {
+
+  .testifix {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 @import url(https://fonts.googleapis.com/css?family=Roboto:300,400);
@@ -733,14 +748,15 @@ footer .content {
   font-size: 16px;
   /* margin: 35px 10px 10px; */
   max-width: 600px;
-  margin: 20px auto;
-  min-width: 250px;
+  margin: 40px auto;
+  /* min-width: 250px; */
   position: relative;
   text-align: center;
   width: 100%;
   background-color: #ffffff;
   border-radius: 5px;
   border-top: 5px solid #d2652d;
+  border-bottom: 5px solid #d2652d;
 }
 
 .snip1533 *,
@@ -791,4 +807,13 @@ footer .content {
   font-style: italic;
   font-weight: 300;
   margin: 0 0 20px;
+}
+
+.testifix {
+  display: flex;
+  /* flex-direction: row; */
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+  /* margin: auto; */
 }

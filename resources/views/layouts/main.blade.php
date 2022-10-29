@@ -57,8 +57,10 @@
 
   <section class="home" id="home">
     <div class="container">
-      <h1>SKOST</h1>
-      <p>Discover the place where you have fun & enjoy a lot</p>
+      <div class="homesmall">
+        <h1>SKOST</h1>
+        <p>Discover the place where you have fun & enjoy a lot</p>
+      </div>
   </section>
 
   <!-- Home End -->
@@ -187,31 +189,13 @@
 
   <!-- Testimoni -->
 
-  <section class="customer top" id="testimonials">
+  <section class="customer top" id="testimonial">
     <div class="container">
       <div class="heading">
         <h5>TESTIMONIALS </h5>
         <h3>What customers say </h3>
       </div>
-      <div class="">
-        <figure class="snip1533">
-          <figcaption>
-            <blockquote>
-              <p>If you do the job badly enough, sometimes you don't get asked to do it again.</p>
-            </blockquote>
-            <h3>Wisteria Ravenclaw</h3>
-            <h4>Google Inc.</h4>
-          </figcaption>
-        </figure>
-        <figure class="snip1533">
-          <figcaption>
-            <blockquote>
-              <p>I'm killing time while I wait for life to shower me with meaning and happiness.</p>
-            </blockquote>
-            <h3>Ursula Gurnmeister</h3>
-            <h4>Facebook</h4>
-          </figcaption>
-        </figure>
+      <div class="testifix">
         <figure class="snip1533">
           <figcaption>
             <blockquote>
@@ -231,60 +215,26 @@
           </figcaption>
         </figure>
       </div>
-      <!-- <figure class="snip1533">
-        <figcaption>
-          <blockquote>
-            <p>The only skills I have the patience to learn are those that have no real application in life. </p>
-          </blockquote>
-          <h3>Ingredia Nutrisha</h3>
-          <h4>Twitter</h4>
-        </figcaption>
-      </figure> -->
-
-      <!-- <div class="owl-carousel owl-theme mtop">
-        <div class="item">
-          <div class="rate">
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-          </div>
-          <h3>Kost Yang Asri</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
-            aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-          <div class="admin flex">
-            <div class="img">
-              <img src="image/c1.jpg" alt="">
-            </div>
-            <div class="text">
-              <h3>Hayam Muruk</h3>
-              <span>Student   </span>
-            </div>
-          </div>
-        </div>
-        <div class="item">
-          <div class="rate">
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-          </div>
-          <h3>Excellent Swimming</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
-            aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-          <div class="admin flex">
-            <div class="img">
-              <img src="image/c2.jpg" alt="">
-            </div>
-            <div class="text">
-              <h3>Ayman Jensi</h3>
-              <span>Manager</span>
-            </div>
-          </div>
-        </div>
-      </div> -->
+      <div class="testifix">
+        <figure class="snip1533">
+          <figcaption>
+            <blockquote>
+              <p>If you do the job badly enough, sometimes you don't get asked to do it again.</p>
+            </blockquote>
+            <h3>Wisteria Ravenclaw</h3>
+            <h4>Google Inc.</h4>
+          </figcaption>
+        </figure>
+        <figure class="snip1533">
+          <figcaption>
+            <blockquote>
+              <p>I'm killing time while I wait for life to shower me with meaning and happiness.</p>
+            </blockquote>
+            <h3>Ursula Gurnmeister</h3>
+            <h4>Facebook</h4>
+          </figcaption>
+        </figure>
+      </div>
     </div>
   </section>
 
