@@ -21,10 +21,18 @@
         </div>
 
         <ul class="nav-menu">
-          <li> <a href="#about">About</a> </li>
-          <li> <a href="kost1.html">KOST 1</a> </li>
+          <li> <a href="#about">Tentang Kami</a> </li>
+          <li> <a href="kost1.html">Kost</a> </li>
           <li> <a href="#testimonial">Testimoni</a> </li>
-          <li> <a href="#contact">Contact</a> </li>
+          <li> <a href="#contact">Kontak</a></li>
+          <li
+            style="
+              background-color: #f9a826;
+              padding: 10px 30px;
+            "
+          > <a href="#" 
+          style="color: black;
+                font-weight: bold;">Login</a></li>
         </ul>
 
         <div class="hamburger">
@@ -57,8 +65,12 @@
 
   <section class="home" id="home">
     <div class="container">
-      <h1></h1>
-      <p>Discover the place where you have fun & enjoy a lot</p>
+      <div class="homesmall">
+        <h1>SKOST</h1>
+        <h5>
+          Skost selalu menyediakan kost yang pasti nyaman, terjangkau dan sesuai keinginnanmu
+        </h5>
+      </div>
   </section>
 
   <!-- Home End -->
@@ -71,20 +83,20 @@
     <div class="container">
       <div class="heading">
         <h5>EXPLORE</h5>
-        <h2>We are cool to give you pleasure
+        <h2>Kami menyediakan beberapa rekomendasi kost
         </h2>
       </div>
 
       <div class="content flex  top">
         <div class="left">
-          <h3>As much as comfort want to get from us everything
+          <h3>Apa itu SKOST? Apa Gunanya?
           </h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
             aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
           <p> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
         </div>
         <div class="right">
-          <img src="{{ asset('assets/img/a.png') }}" alt="">
+          <img src="{{ asset('assets/img/b2.jpg') }}" alt="">
         </div>
       </div>
     </div>
@@ -122,72 +134,59 @@
 
   <!-- Avaible Kost -->
 
-  <section class="blog top" id="blog">
+  <section class="available top" id="available">
     <div class="container">
       <div class="heading">
-        <h5>OUR BLOG</h5>
-        <h3>News & articles updates</h3>
+        <h5>OUR KOST</h5>
+        <h3>Some Top Our Kost</h3>
       </div>
 
       <div class="content grid mtop">
         <div class="box">
           <div class="img">
             <img src="{{ asset('assets/img/new1.jpg') }}" alt="">
-            <span>HOTEL</span>
+            {{-- <span>HOTEL</span> --}}
           </div>
           <div class="text">
-            <div class="flex">
-              <i class="far fa-user"> <label>Admin</label> </i>
-              <i class="far fa-comments"> <label>Comment</label> </i>
-            </div>
-            <h3>Celebrating Decade Years Of Hotel In 2020</h3>
+            <h3>Kost Wano</h3>
             <p> Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            <a href="#">Read More <i class='far fa-long-arrow-alt-right'></i></a>
+            <a href="#">Read More </a>
           </div>
         </div>
+
         <div class="box">
           <div class="img">
             <img src="{{ asset('assets/img/new1.jpg') }}" alt="">
-            <span>HOTEL</span>
+            {{-- <span>HOTEL</span> --}}
           </div>
           <div class="text">
-            <div class="flex">
-              <i class="far fa-user"> <label>Admin</label> </i>
-              <i class="far fa-comments"> <label>Comment</label> </i>
-            </div>
-            <h3>Celebrating Decade Years Of Hotel In 2020</h3>
+            <h3>Kost Water Seven</h3>
             <p> Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            <a href="#">Read More <i class='far fa-long-arrow-alt-right'></i> </a>
+            <a href="#">Read More </a>
           </div>
         </div>
+
         <div class="box">
           <div class="img">
             <img src="{{ asset('assets/img/new1.jpg') }}" alt="">
-            <span>HOTEL</span>
+            {{-- <span>HOTEL</span> --}}
           </div>
           <div class="text">
-            <div class="flex">
-              <i class="far fa-user"> <label>Admin</label> </i>
-              <i class="far fa-comments"> <label>Comment</label> </i>
-            </div>
-            <h3>Celebrating Decade Years Of Hotel In 2020</h3>
+            <h3>Kost Skypea</h3>
             <p> Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            <a href="#">Read More <i class='far fa-long-arrow-alt-right'></i> </a>
+            <a href="#">Read More </a>
           </div>
         </div>
+
         <div class="box">
           <div class="img">
             <img src="{{ asset('assets/img/new1.jpg') }}" alt="">
-            <span>HOTEL</span>
+            {{-- <span>HOTEL</span> --}}
           </div>
           <div class="text">
-            <div class="flex">
-              <i class="far fa-user"> <label>Admin</label> </i>
-              <i class="far fa-comments"> <label>Comment</label> </i>
-            </div>
-            <h3>Celebrating Decade Years Of Hotel In 2020</h3>
+            <h3>Kost Wolecake</h3>
             <p> Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            <a href="#">Read More <i class='far fa-long-arrow-alt-right'></i> </a>
+            <a href="#">Read More </a>
           </div>
         </div>
       </div>
@@ -200,31 +199,13 @@
 
   <!-- Testimoni -->
 
-  <section class="customer top" id="testimonials">
+  <section class="customer top" id="testimonial">
     <div class="container">
       <div class="heading">
         <h5>TESTIMONIALS </h5>
         <h3>What customers say </h3>
       </div>
-      <div class="">
-        <figure class="snip1533">
-          <figcaption>
-            <blockquote>
-              <p>If you do the job badly enough, sometimes you don't get asked to do it again.</p>
-            </blockquote>
-            <h3>Wisteria Ravenclaw</h3>
-            <h4>Google Inc.</h4>
-          </figcaption>
-        </figure>
-        <figure class="snip1533">
-          <figcaption>
-            <blockquote>
-              <p>I'm killing time while I wait for life to shower me with meaning and happiness.</p>
-            </blockquote>
-            <h3>Ursula Gurnmeister</h3>
-            <h4>Facebook</h4>
-          </figcaption>
-        </figure>
+      <div class="testifix">
         <figure class="snip1533">
           <figcaption>
             <blockquote>
@@ -244,60 +225,26 @@
           </figcaption>
         </figure>
       </div>
-      <!-- <figure class="snip1533">
-        <figcaption>
-          <blockquote>
-            <p>The only skills I have the patience to learn are those that have no real application in life. </p>
-          </blockquote>
-          <h3>Ingredia Nutrisha</h3>
-          <h4>Twitter</h4>
-        </figcaption>
-      </figure> -->
-
-      <!-- <div class="owl-carousel owl-theme mtop">
-        <div class="item">
-          <div class="rate">
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-          </div>
-          <h3>Kost Yang Asri</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
-            aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-          <div class="admin flex">
-            <div class="img">
-              <img src="image/c1.jpg" alt="">
-            </div>
-            <div class="text">
-              <h3>Hayam Muruk</h3>
-              <span>Student   </span>
-            </div>
-          </div>
-        </div>
-        <div class="item">
-          <div class="rate">
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-          </div>
-          <h3>Excellent Swimming</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
-            aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-          <div class="admin flex">
-            <div class="img">
-              <img src="image/c2.jpg" alt="">
-            </div>
-            <div class="text">
-              <h3>Ayman Jensi</h3>
-              <span>Manager</span>
-            </div>
-          </div>
-        </div>
-      </div> -->
+      <div class="testifix">
+        <figure class="snip1533">
+          <figcaption>
+            <blockquote>
+              <p>If you do the job badly enough, sometimes you don't get asked to do it again.</p>
+            </blockquote>
+            <h3>Wisteria Ravenclaw</h3>
+            <h4>Google Inc.</h4>
+          </figcaption>
+        </figure>
+        <figure class="snip1533">
+          <figcaption>
+            <blockquote>
+              <p>I'm killing time while I wait for life to shower me with meaning and happiness.</p>
+            </blockquote>
+            <h3>Ursula Gurnmeister</h3>
+            <h4>Facebook</h4>
+          </figcaption>
+        </figure>
+      </div>
     </div>
   </section>
 
@@ -495,7 +442,7 @@
       </div>
     </div>
   </footer>
-  
+
   <!-- End Footer-->
 </body>
 </html>
