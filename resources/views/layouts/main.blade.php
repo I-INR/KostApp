@@ -21,10 +21,18 @@
         </div>
 
         <ul class="nav-menu">
-          <li> <a href="#about">About</a> </li>
-          <li> <a href="kost1.html">KOST 1</a> </li>
+          <li> <a href="#about">Tentang Kami</a> </li>
+          <li> <a href="kost1.html">Kost</a> </li>
           <li> <a href="#testimonial">Testimoni</a> </li>
-          <li> <a href="#contact">Contact</a> </li>
+          <li> <a href="#contact">Kontak</a></li>
+          <li
+            style="
+              background-color: #f9a826;
+              padding: 10px 30px;
+            "
+          > <a href="#" 
+          style="color: black;
+                font-weight: bold;">Login</a></li>
         </ul>
 
         <div class="hamburger">
@@ -59,7 +67,7 @@
     <div class="container">
       <div class="homesmall">
         <h1>SKOST</h1>
-        <p>Discover the place where you have fun & enjoy a lot</p>
+        <h5>Discover the place where you have fun & enjoy a lot</h5>
       </div>
   </section>
 
