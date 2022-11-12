@@ -234,7 +234,7 @@ header .head_contact i {
 /* .home p {
   color: #E99519;
 } */
-.home h5 {
+.home h4 {
   color: #E99519;
   line-height: 30px;
   margin-bottom: 20px;
@@ -285,6 +285,9 @@ button span {
 .top {
   margin-top: 80px;
 }
+.top_v2{
+  margin-top: 50px;
+}
 
 .mtop {
   margin-top: 40px;
@@ -294,17 +297,16 @@ button span {
   text-align: center;
 }
 
-.heading h5 {
+.heading h4 {
   font-weight: 400;
   letter-spacing: 5px;
-  color: #CC8C18;
+  color: #24416B;
   padding-top: 20px;
 }
 
 .heading h2 {
-  color: #24416B;
+  color: #53280F;
   font-size: 45px;
-  font-family: serif;
   font-weight: bold;
   margin: 10px 0 20px 0;
 }
@@ -317,22 +319,24 @@ button span {
 }
 
 h3 {
-  font-size: 35px;
-  font-family: serif;
-  color: #24416B;
+  font-size: 30px;
+  color: #53280F;
   margin-bottom: 20px;
 }
 
 .about .left {
   padding: 20px;
 }
+.about .left_about {
+  padding: 0 20px 20px 20px;
+}
 
-p {
+/* p {
   line-height: 30px;
   color: #a4a4a4;
   margin-bottom: 20px;
   font-size: 15px;
-}
+} */
 
 .about {
   position: relative;
@@ -411,8 +415,7 @@ p {
   color: #000000;
 }
 .available h3{
-
-  color: #E99519;
+  color: #000000;
 }
 
 .available img {
@@ -444,7 +447,7 @@ p {
   font-size: 15px;
   margin-top: 10px;
   padding: 20px 30px;
-  background-color: #06283D;
+  background-color: #53280F;
   border-radius: 5px;
   font-weight: 800;
   -webkit-border-radius: 5px;
@@ -460,16 +463,249 @@ p {
 
 
 /*------------footer------------*/
-footer {
+
+.footer-distributed{
+	background: #CE9642;
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+	box-sizing: border-box;
+	width: 100%;
+	/* font: bold 16px sans-serif; */
+	text-align: left;
+	padding: 50px 60px 40px;
+	overflow: hidden;
+}
+
+/* section {
+  width: 100%;
+  display: inline-block;
+  background: #ccc;
+  height: 60vh;
+  text-align: center;
+  font-size: 22px;
+  font-weight: 700;
+  text-decoration: underline;
+} */
+
+
+/* Footer left */
+
+.footer-distributed .footer-left{
+	float: left;
+}
+
+/* The company logo */
+
+.footer-distributed h3{
+	color:  #ffffff;
+	/* font: normal 36px 'Roboto', cursive; */
+	margin: 0 0 10px;
+}
+
+.footer-distributed h3 span{
+	color:  #ffffff;
+}
+
+/* Footer links */
+
+.footer-distributed .footer-links{
+	color:  #ffffff;
+	margin: 0 0 10px;
+	padding: 0;
+}
+
+.footer-distributed .footer-links a{
+	display:inline-block;
+	line-height: 1.8;
+	text-decoration: none;
+	color:  inherit;
+}
+
+.footer-distributed .footer-company-name{
+	color:  #ffffff;
+	font-size: 14px;
+	font-weight: normal;
+  text-decoration: none;
+  color: white;
+	margin: 0;
+}
+
+.footer-distributed .footer-company-name a {
+  color: white;
+}
+
+/* Footer social icons */
+
+.footer-distributed .footer-icons{
+	margin-top: 40px;
+}
+
+.footer-distributed .footer-icons a{
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	cursor: pointer;
+	background-color:  #ffffff;
+	border-radius: 2px;
+
+	font-size: 20px;
+	color: #ffffff;
+	text-align: center;
+	line-height: 35px;
+
+	margin-right: 3px;
+	margin-bottom: 5px;
+}
+
+/* Footer Right */
+
+.footer-distributed .footer-right{
+	float: right;
+}
+
+.footer-distributed .footer-right p{
+	/* display: inline-block; */
+	/* vertical-align: top; */
+	margin: 0 42px 0 0;
+	color: #ffffff;
+  font-weight: bold;
+  font-size: 23px;
+}
+
+/* The contact form */
+
+.footer-distributed form{
+	display: inline-block;
+}
+
+.footer-distributed form input,
+.footer-distributed form textarea{
+	display: block;
+	border-radius: 3px;
+	box-sizing: border-box;
+	background-color:  #ffffff;
+	box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.1);
+	border: none;
+	resize: none;
+
+	font: inherit;
+	font-size: 14px;
+	font-weight: normal;
+	color:  #d1d2d2;
+	width: 400px;
+	padding: 18px;
+}
+
+.footer-distributed ::-webkit-input-placeholder {
+	color:  #5c666b;
+}
+
+.footer-distributed ::-moz-placeholder {
+	color:  #5c666b;
+	opacity: 1;
+}
+
+.footer-distributed :-ms-input-placeholder{
+	color:  #5c666b;
+}
+
+
+.footer-distributed form input{
+	height: 55px;
+	margin-bottom: 15px;
+}
+
+.footer-distributed form textarea{
+	height: 100px;
+	margin-bottom: 20px;
+}
+
+.footer-distributed form button{
+	border-radius: 3px;
+	background-color:  #53280F;
+	color: #ffffff;
+	border: 0;
+	padding: 15px 50px;
+	font-weight: bold;
+	float: right;
+}
+
+/* If you don't want the footer to be responsive, remove these media queries */
+
+@media (max-width: 1000px) {
+
+	.footer-distributed {
+		font: bold 14px sans-serif;
+	}
+
+	.footer-distributed .footer-company-name{
+		font-size: 12px;
+	}
+
+	.footer-distributed form input,
+	.footer-distributed form textarea{
+		width: 250px;
+	}
+
+	.footer-distributed form button{
+		padding: 10px 35px;
+	}
+
+}
+
+@media (max-width: 800px) {
+
+	.footer-distributed{
+		padding: 30px;
+	}
+
+	.footer-distributed .footer-left,
+	.footer-distributed .footer-right{
+		float: none;
+		max-width: 300px;
+		margin: 0 auto;
+	}
+
+	.footer-distributed .footer-left{
+		margin-bottom: 40px;
+	}
+
+	.footer-distributed form{
+		margin-top: 30px;
+	}
+
+	.footer-distributed form{
+		display: block;
+	}
+
+	.footer-distributed form button{
+		float: none;
+	}
+}
+/* footer {
   background: black;
   color: white;
   padding: 30px;
 }
 
+.footer_v1 {
+  width: 100%;
+  background-color: #CE9642;
+}
+
+.top_footer {
+  margin-top: 50px;
+}
+
 .subscribe {
+  padding: 50px 0 0 0;
   text-align: center;
   max-width: 50%;
   margin: auto;
+}
+
+.subscribe p {
+  color: #fff;
+  line-height: 30px;
 }
 
 .subscribe input {
@@ -483,9 +719,10 @@ footer .grid {
   grid-template-columns: repeat(4, 1fr);
 }
 
-footer .content h2 {
+.subscribe h1 {
   margin-bottom: 20px;
   font-size: 23px;
+  color: #ffffff;
 }
 
 footer li {
@@ -518,9 +755,9 @@ footer .social i {
 
 footer .content {
   padding-top: 20px;
-  /* padding-bottom: 50px; */
+  padding-bottom: 50px;
   border-top: 2px solid rgba(255, 255, 255, 0.2);
-}
+} */
 
 /*------------footer------------*/
 @media only screen and (max-width:768px) {

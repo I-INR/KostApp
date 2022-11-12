@@ -4,11 +4,16 @@
 <head>
   <title>S KOST</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+
   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
   <link rel="stylesheet" href={{ asset ('css/style.css') }}>
-  <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+
 </head>
 <body>
 
@@ -31,7 +36,7 @@
               padding: 10px 30px;
             "
           > <a href="#" 
-          style="color: black;
+          style="color: white;
                 font-weight: bold;">Login</a></li>
         </ul>
 
@@ -82,20 +87,20 @@
   <section class="about" id="about">
     <div class="container">
       <div class="heading">
-        <h5>EXPLORE</h5>
-        <h2>Kami menyediakan beberapa rekomendasi kost
+        <h4>Jelajahi</h4>
+        <h2>Kami Menyediakan Beberapa Rekomendasi Kost
         </h2>
       </div>
 
-      <div class="content flex  top">
-        <div class="left">
-          <h3>Apa itu SKOST? Apa Gunanya?
+      <div class="content flex top_v2">
+        <div class="left_about">
+          <h3 class="sec_about">Apa itu SKOST? Untuk Apa Kami Ada?
           </h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
             aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
           <p> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
         </div>
-        <div class="right">
+        <div class="right" data-aos="fade-left" data-aos-duration="1300">
           <img src="{{ asset('assets/img/b2.jpg') }}" alt="">
         </div>
       </div>
@@ -109,7 +114,7 @@
   <!-- tools for corousel -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"></script>
-  <script>
+  {{-- <script>
     $('.owl-carousel').owlCarousel({
       loop: true,
       margin: 10,
@@ -128,7 +133,7 @@
         }
       }
     })
-  </script>
+  </script> --}}
   
 
 
@@ -137,13 +142,13 @@
   <section class="available top" id="available">
     <div class="container">
       <div class="heading">
-        <h5>OUR KOST</h5>
-        <h3>Some Top Our Kost</h3>
+        <h4 data-aos="fade-left" data-aos-duration="1000">Top Kost</h4>
+        <h3 data-aos="fade-right" data-aos-duration="1300">Rekomendasi Kost Kami</h3>
       </div>
 
       <div class="content grid mtop">
         <div class="box">
-          <div class="img">
+          <div class="img" data-aos="fade-up" data-aos-duration="1300">
             <img src="{{ asset('assets/img/new1.jpg') }}" alt="">
             {{-- <span>HOTEL</span> --}}
           </div>
@@ -155,7 +160,7 @@
         </div>
 
         <div class="box">
-          <div class="img">
+          <div class="img" data-aos="fade-up" data-aos-duration="1400">
             <img src="{{ asset('assets/img/new1.jpg') }}" alt="">
             {{-- <span>HOTEL</span> --}}
           </div>
@@ -167,7 +172,7 @@
         </div>
 
         <div class="box">
-          <div class="img">
+          <div class="img" data-aos="fade-up" data-aos-duration="1500">
             <img src="{{ asset('assets/img/new1.jpg') }}" alt="">
             {{-- <span>HOTEL</span> --}}
           </div>
@@ -179,7 +184,7 @@
         </div>
 
         <div class="box">
-          <div class="img">
+          <div class="img" data-aos="fade-up" data-aos-duration="1600">
             <img src="{{ asset('assets/img/new1.jpg') }}" alt="">
             {{-- <span>HOTEL</span> --}}
           </div>
@@ -202,8 +207,8 @@
   <section class="customer top" id="testimonial">
     <div class="container">
       <div class="heading">
-        <h5>TESTIMONIALS </h5>
-        <h3>What customers say </h3>
+        <h4>Testimoni</h4>
+        <h3>Apa yang dikatakan pelanggan?</h3>
       </div>
       <div class="testifix">
         <figure class="snip1533">
@@ -252,7 +257,7 @@
 
 
 
-  <script>
+  {{-- <script>
     $('.owl-carousel').owlCarousel({
       loop: true,
       margin: 10,
@@ -272,9 +277,6 @@
       }
     })
   </script>
-
-
-
   <script>
     $('.owl-carousel').owlCarousel({
       loop: true,
@@ -298,17 +300,17 @@
         }
       }
     })
-  </script>
+  </script> --}}
 
+  <!-- End Tools Corousel -->
 
-
-  <!-- Footer -->
-
-  <footer>
-    <div class="container top">
-      <div class="subscribe" id="contact">
-        <h2>Contact Developer</h2>
-        <p> Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+{{-- 
+  <div class="top footer_v1">
+    <div class="subscribe" id="contact">
+      <h1>Kontak Developer</h1>
+      <p>Hubungi kami jika kamu memiliki masalah pada website</p>
+      <p>Hubungi kami jika kamu ingin mengenal lebih jauh dengan developer</p>
+      <div class="mirr">
         <div class="input flex">
           <input type="email" placeholder="Your Email address">
           <button class="flex1">
@@ -317,8 +319,13 @@
           </button>
         </div>
       </div>
+    </div>
+  </div> --}}
+  <!-- Footer -->
 
-      <div class="content grid  top">
+  {{-- <footer>
+    <div class="container top">
+      <div class="content grid top">
         <div class="box">
           <h2>Services</h2>
           <div class="icon flex">
@@ -441,8 +448,59 @@
         </div>
       </div>
     </div>
+  </footer> --}}
+
+  <footer class="footer-distributed">
+
+    <div class="footer-left">
+
+      <h3>Search<span>Kost</span></h3>
+
+      <p class="footer-links">
+        <a href="#about">Tentang Kami</a>
+      |
+        <a href="">Kost</a>
+      |
+        <a href="#testimonial">Testimoni</a>
+      |
+        <a href="#contact">Kontak</a>
+      |
+      </p>
+
+      <p class="footer-company-name">Copyright <a href="https://github.com/muamarzidan">MuzirO</a></p>
+
+      <div class="footer-icons">
+
+        <a href="#"><i class="fa fa-facebook"></i></a>
+        <a href="#"><i class="fa fa-twitter"></i></a>
+        <a href="#"><i class="fa fa-linkedin"></i></a>
+        <a href="#"><i class="fa fa-github"></i></a>
+
+      </div>
+
+    </div>
+
+    <div class="footer-right">
+
+      <p>Contact Us</p>
+
+      <form action="#" method="post">
+
+        <input type="text" name="email" placeholder="Email">
+        <textarea name="message" placeholder="Message"></textarea>
+        <button>Send</button>
+
+      </form>
+
+    </div>
+
   </footer>
 
   <!-- End Footer-->
+
+  <script>
+    AOS.init();
+  </script>
+
 </body>
 </html>
