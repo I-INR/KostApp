@@ -27,7 +27,7 @@
 
         <ul class="nav-menu">
           <li> <a href="#about">Tentang Kami</a> </li>
-          <li> <a href="kost1.html">Kost</a> </li>
+          <li> <a href="{{ url('/kost') }}">Kost</a> </li>
           <li> <a href="#testimonial">Testimoni</a> </li>
           <li> <a href="#contact">Kontak</a></li>
           <li
