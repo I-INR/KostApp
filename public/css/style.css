@@ -239,7 +239,7 @@ header .head_contact i {
   line-height: 30px;
   margin-bottom: 20px;
   font-size: 15px;
-  
+
 }
 
 .home .content {
@@ -454,6 +454,10 @@ h3 {
   -moz-border-radius: 5px;
   -ms-border-radius: 5px;
   -o-border-radius: 5px;
+}
+
+.readmore{
+    margin-top: 20px;
 }
 
 
@@ -889,7 +893,7 @@ footer .content {
   .nav-menu {
     top: 12rem;
   }
-  
+
   .homesmall {
     padding:  140px 0 0 0;
   }

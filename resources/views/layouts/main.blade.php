@@ -35,7 +35,7 @@
               background-color: #f9a826;
               padding: 10px 30px;
             "
-          > <a href="#" 
+          > <a href="#"
           style="color: white;
                 font-weight: bold;">Login</a></li>
         </ul>
@@ -134,7 +134,7 @@
       }
     })
   </script> --}}
-  
+
 
 
   <!-- Avaible Kost -->
@@ -155,7 +155,9 @@
           <div class="text">
             <h3>Kost Wano</h3>
             <p> Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            <a href="#">Read More </a>
+            <div class ="readmore">
+                <a href="#">Read More </a>
+            </div>
           </div>
         </div>
 
@@ -167,7 +169,9 @@
           <div class="text">
             <h3>Kost Water Seven</h3>
             <p> Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            <a href="#">Read More </a>
+            <div class ="readmore">
+                <a href="#">Read More </a>
+            </div>
           </div>
         </div>
 
@@ -179,7 +183,9 @@
           <div class="text">
             <h3>Kost Skypea</h3>
             <p> Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            <a href="#">Read More </a>
+            <div class ="readmore">
+                <a href="#">Read More </a>
+            </div>
           </div>
         </div>
 
@@ -191,7 +197,9 @@
           <div class="text">
             <h3>Kost Wolecake</h3>
             <p> Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            <a href="#">Read More </a>
+            <div class ="readmore">
+                <a href="#">Read More </a>
+            </div>
           </div>
         </div>
       </div>
@@ -304,7 +312,7 @@
 
   <!-- End Tools Corousel -->
 
-{{-- 
+{{--
   <div class="top footer_v1">
     <div class="subscribe" id="contact">
       <h1>Kontak Developer</h1>
