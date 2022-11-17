@@ -22,7 +22,7 @@ use App\Http\Controllers\StokostController;
 Route::get('/', function () {
     return view('layouts.main');
 });
-Route::get('/', function () {
+Route::get('/kost', function () {
     return view('layouts.kost');
 });
 

@@ -18,7 +18,7 @@
     <div class="container">
       <nav class="navbar flex1">
         <div class="sticky_logo logo">
-          <a href="./index.html">SKOST</a>
+          <a href="{{ url('/main') }}">SKOST</a>
         </div>
         <ul class="nav-menu">
           <!-- <li> <a href="#home">Home</a> </li> -->
