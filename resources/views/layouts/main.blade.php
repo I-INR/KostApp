@@ -29,7 +29,7 @@
           <li> <a href="#about">Tentang Kami</a> </li>
           <li> <a href="{{ url('/kost') }}">Kost</a> </li>
           <li> <a href="#testimonial">Testimoni</a> </li>
-          <li> <a href="#contact">Kontak</a></li>
+          <li> <a href="#kontak">Kontak</a></li>
           <li
             style="
               background-color: #f9a826;
@@ -265,53 +265,6 @@
 
 
 
-  {{-- <script>
-    $('.owl-carousel').owlCarousel({
-      loop: true,
-      margin: 10,
-      nav: false,
-      dots: false,
-      navText: ["<i class='far fa-long-arrow-alt-left'></i>", "<i class='far fa-long-arrow-alt-right'></i>"],
-      responsive: {
-        0: {
-          items: 1
-        },
-        768: {
-          items: 1
-        },
-        1000: {
-          items: 1
-        }
-      }
-    })
-  </script>
-  <script>
-    $('.owl-carousel').owlCarousel({
-      loop: true,
-      margin: 0,
-      nav: false,
-      dots: false,
-      autoplay: true,
-      slideTransition: 'linear',
-      autoplayTimeout: 4000,
-      autoplaySpeed: 4000,
-      autoplayHoverPause: true,
-      responsive: {
-        0: {
-          items: 1
-        },
-        768: {
-          items: 3
-        },
-        1000: {
-          items: 5
-        }
-      }
-    })
-  </script> --}}
-
-  <!-- End Tools Corousel -->
-
 {{--
   <div class="top footer_v1">
     <div class="subscribe" id="contact">
@@ -458,39 +411,33 @@
     </div>
   </footer> --}}
 
-  <footer class="footer-distributed">
+  <footer class="footer-distributed" id="kontak">
 
     <div class="footer-left">
 
       <h3>Search<span>Kost</span></h3>
 
-      <p class="footer-links">
-        <a href="#about">Tentang Kami</a>
-      |
-        <a href="">Kost</a>
-      |
-        <a href="#testimonial">Testimoni</a>
-      |
-        <a href="#contact">Kontak</a>
-      |
-      </p>
 
-      <p class="footer-company-name">Copyright <a href="https://github.com/muamarzidan">MuzirO</a></p>
 
-      <div class="footer-icons">
+      {{-- <p class="footer-company-name">Copyright <a href="https://github.com/muamarzidan">MuzirO</a></p> --}}
 
-        <a href="#"><i class="fa fa-facebook"></i></a>
-        <a href="#"><i class="fa fa-twitter"></i></a>
-        <a href="#"><i class="fa fa-linkedin"></i></a>
-        <a href="#"><i class="fa fa-github"></i></a>
 
-      </div>
 
     </div>
 
     <div class="footer-right">
+      <p class="footer-links">
+        <a href="#about">Tentang Kami</a>
+      
+        <a href="">Kost</a>
+      
+        <a href="#testimonial">Testimoni</a>
+      
+        <a href="#contact">Kontak</a>
+      
+      </p>
 
-      <p>Contact Us</p>
+      {{-- <p>Contact Us</p>
 
       <form action="#" method="post">
 
@@ -498,7 +445,7 @@
         <textarea name="message" placeholder="Message"></textarea>
         <button>Send</button>
 
-      </form>
+      </form> --}}
 
     </div>
 

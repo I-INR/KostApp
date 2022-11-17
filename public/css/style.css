@@ -495,6 +495,8 @@ h3 {
 
 .footer-distributed .footer-left{
 	float: left;
+  max-width: 300px;
+  margin-right: 40px;
 }
 
 /* The company logo */
@@ -562,9 +564,9 @@ h3 {
 
 /* Footer Right */
 
-.footer-distributed .footer-right{
+/* .footer-distributed .footer-right{
 	float: right;
-}
+} */
 
 .footer-distributed .footer-right p{
 	/* display: inline-block; */
