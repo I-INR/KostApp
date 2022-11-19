@@ -5,20 +5,20 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
         <link rel="stylesheet" href="{{ asset ('css/kost.css') }}">
-      
+
         <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
-      
+
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
-      
-      
+
+
       </head>
 <body>
   <header class="header">
     <div class="container">
       <nav class="navbar flex1">
         <div class="sticky_logo logo">
-          <a href="./index.html">SKOST</a>
+          <a href="./">SKOST</a>
         </div>
         <ul class="nav-menu">
           <!-- <li> <a href="#home">Home</a> </li> -->
@@ -85,7 +85,7 @@
             <i class="fas fa-arrow-circle-right"></i>
           </button>
         </div>
-      </div> 
+      </div>
     </div>
   </section> -->
 
@@ -169,7 +169,7 @@
             <h5>OUR ROOMS</h5>
             <h2>Fascinating rooms & suites </h2>
           </div>
-          
+
           <div class="content flex mtop">
             <div class="right1">
                 <img src="image/r.jpg" alt="">
@@ -263,7 +263,7 @@
               <h4>Twitter</h4>
             </figcaption>
           </figure> -->
-    
+
           <!-- <div class="owl-carousel owl-theme mtop">
             <div class="item">
               <div class="rate">
@@ -325,7 +325,7 @@
               </button>
             </div>
           </div>
-    
+
           <div class="content grid  top">
             <!-- <div class="box">
               <div class="logo">
@@ -339,7 +339,7 @@
                 <i class="fab fa-youtube"></i>
               </div>
             </div>
-    
+
             <div class="box">
               <h2>Quick Links</h2>
               <ul>
@@ -351,7 +351,7 @@
                 <li><i class="fas fa-angle-double-right"></i>Contact</li>
               </ul>
             </div>
-    
+
             <div class="box">
               <h2>Services</h2>
               <ul>
@@ -363,7 +363,7 @@
                 <li><i class="fas fa-angle-double-right"></i>Adult Room</li>
               </ul>
             </div> -->
-    
+
             <div class="box">
               <h2>Services</h2>
               <div class="icon flex">
