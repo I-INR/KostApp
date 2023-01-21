@@ -19,6 +19,10 @@ use App\Http\Controllers\StokostController;
 |
 */
 
+Route::get('/main', function () {
+    return view('layouts.main');
+});
+
 Route::get('/', function () {
     return view('layouts.main');
 });
