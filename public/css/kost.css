@@ -333,7 +333,11 @@ button span {
 /*------------home------------*/
 /*------------about------------*/
 .top {
-  margin-top: 80px;
+  margin-top: 40px;
+}
+
+.room .mtop {
+  padding: 10px;
 }
 
 .mtop {
@@ -389,7 +393,7 @@ h3 {
 }
 
 .about .left {
-  padding: 20px;
+  padding:  0 20px 20px 20px;
 }
 .about .left1 {
   padding: 20px;
@@ -541,7 +545,7 @@ p {
 }
 
 .wrapper2 .box {
-  box-shadow: 0 0 20px 3px rgb(0 0 0 / 5%);
+  box-shadow: 0 0 20px 3px rgb(0 0 0 / 20%);
   padding: 20px;
   transition: 0.5s;
 }
@@ -616,7 +620,7 @@ p {
 .grid2 {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-gap: 30px;
+  grid-gap: 20px;
 }
 
 .room img {
@@ -1156,6 +1160,21 @@ footer .content {
   .offer2.wrapper {
     height: 100vh;
   }
+  @media only screen and (max-width: 634px) {
+
+    .testifix {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  .testifix {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+  }
+  
 
   /*------------offer2------------*/
   /*------------customer------------*/

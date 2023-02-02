@@ -122,7 +122,7 @@
           </h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
             aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-          <p> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>x`
+          <p> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
         </div>
         <div class="right">
           {{-- <img src="{{ asset('assets/img/b2.jpg') }}" alt=""> --}}
@@ -181,52 +181,55 @@
         </div>
       </section>
 
-      <section class="customer top" id="testimonials">
+      <section class="customer top" id="testimonial">
         <div class="container">
           <div class="heading">
-            <h5>TESTIMONI</h5>
-            <h3>What customers say </h3>
+            <h4>TESTIMONI</h4>
+            <h3>Apa yang dikatakan pelanggan?</h3>
           </div>
-          <div class="">
+          <div class="testifix">
             <figure class="snip1533">
               <figcaption>
                 <blockquote>
-                  <p>If you do the job badly enough, sometimes you don't get asked to do it again.</p>
+                  <p>“Wah untung ada ngkost, mau pindah pindah kosan jd gampang tinggal cari ajaa disini hihi.”</p>
                 </blockquote>
-                <h3>Wisteria Ravenclaw</h3>
-                <h4>Google Inc.</h4>
+                <h3>Indah</h3>
+                <h4>Mahasiswi, Surabaya</h4>
               </figcaption>
             </figure>
             <figure class="snip1533">
               <figcaption>
                 <blockquote>
-                  <p>I'm killing time while I wait for life to shower me with meaning and happiness.</p>
+                  <p>“Wah untung ada ngkost, mau pindah pindah kosan jd gampang tinggal cari ajaa disini hihi.”</p>
                 </blockquote>
-                <h3>Ursula Gurnmeister</h3>
-                <h4>Facebook</h4>
+                <h3>Erwin</h3>
+                <h4>Mahasiswi, Surabaya</h4>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="testifix">
+            <figure class="snip1533">
+              <figcaption>
+                <blockquote>
+                  <p>“Karena sempet mau pindah kost,temen nyaranin cek BeKost. Ternyata cukup banyak pilihan.”</p>
+                </blockquote>
+                <h3>Andreas</h3>
+                <h4>Mahasiswa, Surabaya</h4>
               </figcaption>
             </figure>
             <figure class="snip1533">
               <figcaption>
                 <blockquote>
-                  <p>If you do the job badly enough, sometimes you don't get asked to do it again.</p>
+                  <p>“Sempet nyari tempat tinggal kost di sekitar SMK Telkom Purwokerto, ternyata bisa nemu juga."</p>
                 </blockquote>
-                <h3>Wisteria Ravenclaw</h3>
-                <h4>Google Inc.</h4>
-              </figcaption>
-            </figure>
-            <figure class="snip1533">
-              <figcaption>
-                <blockquote>
-                  <p>I'm killing time while I wait for life to shower me with meaning and happiness.</p>
-                </blockquote>
-                <h3>Ursula Gurnmeister</h3>
-                <h4>Facebook</h4>
+                <h3>Dwioka</h3>
+                <h4>Siswa, Surabaya</h4>
               </figcaption>
             </figure>
           </div>
         </div>
       </section>
+    
 
 
       <footer>
