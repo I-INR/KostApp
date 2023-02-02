@@ -1,39 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>Kost Muslimah</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
-        <link rel="stylesheet" href="{{ asset ('css/kost.css') }}">
-        <link rel="stylesheet" href="{{ asset ('css/font-6/css/all.css') }}">
-        <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
-      
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
-      
-      
-      </head>
+  <head>
+      <title>Kost Arnest</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+      <link rel="stylesheet" href={{ asset ('css/kost.css') }}>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" />
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+      <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+    </head>
 <body>
   <header class="header">
     <div class="container">
       <nav class="navbar flex1">
         <div class="sticky_logo logo">
-          <a href="{{ url('/main') }}">BE KOST</a>
+          <a href="#home">BE KOST</a>
         </div>
-
         <ul class="nav-menu">
-          <li> <a href="{{ url('/main') }}">Tentang Kami</a> </li>
-          <li> <a href="{{ url('') }}">Kost</a> </li>
+          <li> <a href="#about">Tentang Kami</a> </li>
+          <li class="dropdown"> 
+            <button class="drop-button" onclick="myFunction()">Kost
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="drop-content" id="myDropdown">
+              <a href="{{ url('/kost_fuad') }}">Kost Fuad</a>
+              <a href="{{ url('/kost_ilham') }}">Kost Ilham</a>
+              <a href="{{ url('/kost_kombas') }}">Kost Kombas</a>
+              <a href="{{ url('/kost_arnest') }}">Kost Arnest</a>
+            </div>
+          </li>
           <li> <a href="#testimonial">Testimoni</a> </li>
           <li> <a href="#kontak">Kontak</a></li>
-          <li
-            style="
-              background-color: #f9a826;
-              padding: 10px 30px;
-            "
-          > <a href="#"
-          style="color: white;
-                font-weight: bold;">Login</a></li>
+          <li style="background-color: #f9a826; padding: 10px 30px; border-radius: 3px;">
+            <a href="#" style="color: white;">Login</a>
+          </li>
         </ul>
 
         <div class="hamburger">
@@ -44,6 +48,22 @@
       </nav>
     </div>
   </header>
+
+  
+  <script>
+    function myFunction() {
+      document.getElementById("myDropdown").classList.toggle("show");
+    }
+    window.onclick = function(e) {
+      if (!e.target.matches('.drop-button')) {
+      var myDropdown = document.getElementById("myDropdown");
+        if (myDropdown.classList.contains('show')) {
+          myDropdown.classList.remove('show');
+        }
+      }
+    }
+  </script>
+
   <script>
     const hamburger = document.querySelector(".hamburger");
     const navMenu = document.querySelector(".nav-menu");
@@ -92,21 +112,17 @@
     <div class="container">
       <div class="heading">
         <h5>Jelajahi</h5>
-        <h2>Kost Muslimah
+        <h2>Kost Arnest
         </h2>
       </div>
 
-      <div class="content flex  top">
+      <div class="content flex top">
         <div class="left">
-          <h3>Salah satu kost yang bagus, KOST MUSLIMAH
+          <h3>Kost Arnest, salah satu kost terbaik yang bisa kamu dapatkan   bersama kami
           </h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
             aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-          <p> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-          <!-- <button class="flex1">
-            <span>Check Availability</span>
-            <i class="fas fa-arrow-circle-right"></i>
-          </button> -->
+          <p> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>x`
         </div>
         <div class="right">
           {{-- <img src="{{ asset('assets/img/b2.jpg') }}" alt=""> --}}
@@ -120,8 +136,8 @@
       <section class="room wrapper2 top" id="room">
         <div class="container">
           <div class="heading">
-            <h5>Tentang Kost Kita</h5>
-            <h2>Fasilitas nyaman dan aman</h2>
+            <h5>Ruang Kamar</h5>
+            <h2>Rekomendasi Kamar</h2>
           </div>
           <div class="content flex mtop">
             <div class="left grid2">
@@ -168,7 +184,7 @@
       <section class="customer top" id="testimonials">
         <div class="container">
           <div class="heading">
-            <h5>TESTIMONIALS </h5>
+            <h5>TESTIMONI</h5>
             <h3>What customers say </h3>
           </div>
           <div class="">
@@ -209,60 +225,6 @@
               </figcaption>
             </figure>
           </div>
-          <!-- <figure class="snip1533">
-            <figcaption>
-              <blockquote>
-                <p>The only skills I have the patience to learn are those that have no real application in life. </p>
-              </blockquote>
-              <h3>Ingredia Nutrisha</h3>
-              <h4>Twitter</h4>
-            </figcaption>
-          </figure> -->
-    
-          <!-- <div class="owl-carousel owl-theme mtop">
-            <div class="item">
-              <div class="rate">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-              </div>
-              <h3>Kost Yang Asri</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
-                aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-              <div class="admin flex">
-                <div class="img">
-                  <img src="image/c1.jpg" alt="">
-                </div>
-                <div class="text">
-                  <h3>Hayam Muruk</h3>
-                  <span>Student   </span>
-                </div>
-              </div>
-            </div>
-            <div class="item">
-              <div class="rate">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-              </div>
-              <h3>Excellent Swimming</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
-                aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-              <div class="admin flex">
-                <div class="img">
-                  <img src="image/c2.jpg" alt="">
-                </div>
-                <div class="text">
-                  <h3>Ayman Jensi</h3>
-                  <span>Manager</span>
-                </div>
-              </div>
-            </div>
-          </div> -->
         </div>
       </section>
 
@@ -271,54 +233,9 @@
         <div class="container top">
           <div class="subscribe" id="contact">
             <h2>Kontak Pengurus Kost</h2>
-            {{-- <p> Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            <div class="input flex">
-              <input type="email" placeholder="Your Email address">
-              <button class="flex1">
-                <span>Subscribe</span>
-                <i class="fas fa-arrow-circle-right"></i>
-              </button>
-            </div> --}}
           </div>
     
           <div class="content grid  top">
-            <!-- <div class="box">
-              <div class="logo">
-                <img src="image/logo.png" alt="">
-              </div>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-              <div class="social flex">
-                <i class="fab fa-facebook-f"></i>
-                <i class="fab fa-twitter"></i>
-                <i class="fab fa-instagram"></i>
-                <i class="fab fa-youtube"></i>
-              </div>
-            </div>
-    
-            <div class="box">
-              <h2>Quick Links</h2>
-              <ul>
-                <li><i class="fas fa-angle-double-right"></i>Big Data</li>
-                <li><i class="fas fa-angle-double-right"></i>Wellness</li>
-                <li><i class="fas fa-angle-double-right"></i>Spa Gallery</li>
-                <li><i class="fas fa-angle-double-right"></i>Reservation</li>
-                <li><i class="fas fa-angle-double-right"></i>FAQ</li>
-                <li><i class="fas fa-angle-double-right"></i>Contact</li>
-              </ul>
-            </div>
-    
-            <div class="box">
-              <h2>Kost Muslimah</h2>
-              <ul>
-                <li><i class="fas fa-angle-double-right"></i>Restaurant</li>
-                <li><i class="fas fa-angle-double-right"></i>Swimming Pool</li>
-                <li><i class="fas fa-angle-double-right"></i>Wellness & Spa</li>
-                <li><i class="fas fa-angle-double-right"></i>Conference Room</li>
-                <li><i class="fas fa-angle-double-right"></i>Events</li>
-                <li><i class="fas fa-angle-double-right"></i>Adult Room</li>
-              </ul>
-            </div> -->
-    
             <div class="box">
               <h2>Kost Muslimah</h2>
               <div class="icon flex">

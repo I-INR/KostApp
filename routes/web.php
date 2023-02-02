@@ -26,8 +26,17 @@ Route::get('/main', function () {
 Route::get('/', function () {
     return view('layouts.main');
 });
-Route::get('/kost', function () {
-    return view('layouts.kost');
+Route::get('/kost_arnest', function () {
+    return view('layouts.kost_arnest');
+});
+Route::get('/kost_fuad', function () {
+    return view('layouts.kost_fuad');
+});
+Route::get('/kost_ilham', function () {
+    return view('layouts.kost_ilham');
+});
+Route::get('/kost_kombas', function () {
+    return view('layouts.kost_kombas');
 });
 
 

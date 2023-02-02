@@ -28,24 +28,15 @@
 
         <ul class="nav-menu">
           <li> <a href="#about">Tentang Kami</a> </li>
-          {{-- <div class="dropdown">
-            <button class="drop-button">Kost
-              <i class="fa fa-caret-down"></i>
-            </button>
-            <div class="drop-content">
-              <a href="#">Kost Muslimah</a>
-              <a href="#">Kost Maslamah</a>
-              <a href="#">Kost Mislimah</a>
-            </div>
-          </div> --}}
           <li class="dropdown"> 
             <button class="drop-button" onclick="myFunction()">Kost
               <i class="fa fa-caret-down"></i>
             </button>
             <div class="drop-content" id="myDropdown">
-              <a href="{{ url('/kost') }}">Kost</a>
-              <a href="{{ url('/kost') }}">Kost</a>
-              <a href="{{ url('/kost') }}">Kost</a>
+              <a href="{{ url('/kost_fuad') }}">Kost Fuad</a>
+              <a href="{{ url('/kost_ilham') }}">Kost Ilham</a>
+              <a href="{{ url('/kost_kombas') }}">Kost Kombas</a>
+              <a href="{{ url('/kost_arnest') }}">Kost Arnest</a>
             </div>
           </li>
           <li> <a href="#testimonial">Testimoni</a> </li>
@@ -65,13 +56,9 @@
   </header>
 
   <script>
-    /* When the user clicks on the button, 
-    toggle between hiding and showing the dropdown content */
     function myFunction() {
       document.getElementById("myDropdown").classList.toggle("show");
     }
-    
-    // Close the dropdown if the user clicks outside of it
     window.onclick = function(e) {
       if (!e.target.matches('.drop-button')) {
       var myDropdown = document.getElementById("myDropdown");
@@ -80,7 +67,7 @@
         }
       }
     }
-    </script>
+  </script>
 
   <!-- Resnposive Nav Humberger-->
   <script>
@@ -145,21 +132,20 @@
   <section class="available top" id="available">
     <div class="container">
       <div class="heading">
-        <h4 data-aos="fade-left" data-aos-duration="1000">Top Kost</h4>
-        <h3 data-aos="fade-right" data-aos-duration="1300">Rekomendasi Kost Kami</h3>
+        <h4>Top Kost</h4>
+        <h3>Rekomendasi Kost Kami</h3>
       </div>
 
       <div class="content grid mtop">
         <div class="box">
           <div class="img" data-aos="fade-up" data-aos-duration="1300">
             <img src="{{ asset('assets/img/new1.jpg') }}" alt="">
-            {{-- <span>HOTEL</span> --}}
           </div>
           <div class="text">
-            <h3>Kost Wano</h3>
+            <h3>Kost Fuad</h3>
             <p> Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
             <div class ="readmore">
-                <a href="#">Read More </a>
+                <a href="{{ url('/kost_fuad') }}">Read More </a>
             </div>
           </div>
         </div>
@@ -170,10 +156,10 @@
             {{-- <span>HOTEL</span> --}}
           </div>
           <div class="text">
-            <h3>Kost Water Seven</h3>
+            <h3>Kost Ilham</h3>
             <p> Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
             <div class ="readmore">
-                <a href="#">Read More </a>
+                <a href="{{ url('/kost_ilham') }}">Read More </a>
             </div>
           </div>
         </div>
@@ -184,10 +170,10 @@
             {{-- <span>HOTEL</span> --}}
           </div>
           <div class="text">
-            <h3>Kost Skypea</h3>
+            <h3>Kost Kombas</h3>
             <p> Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
             <div class ="readmore">
-                <a href="#">Read More </a>
+                <a href="{{ url('/kost_kombas') }}">Read More </a>
             </div>
           </div>
         </div>
@@ -198,10 +184,10 @@
             {{-- <span>HOTEL</span> --}}
           </div>
           <div class="text">
-            <h3>Kost Wolecake</h3>
+            <h3>Kost Arnest</h3>
             <p> Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
             <div class ="readmore">
-                <a href="#">Read More </a>
+                <a href="{{ url('/kost_arnest') }}">Read More </a>
             </div>
           </div>
         </div>
@@ -218,26 +204,26 @@
   <section class="customer top" id="testimonial">
     <div class="container">
       <div class="heading">
-        <h4>Testimoni</h4>
+        <h4>TESTIMONI</h4>
         <h3>Apa yang dikatakan pelanggan?</h3>
       </div>
       <div class="testifix">
         <figure class="snip1533">
           <figcaption>
             <blockquote>
-              <p>If you do the job badly enough, sometimes you don't get asked to do it again.</p>
+              <p>“Wah untung ada ngkost, mau pindah pindah kosan jd gampang tinggal cari ajaa disini hihi.”</p>
             </blockquote>
-            <h3>Wisteria Ravenclaw</h3>
-            <h4>Google Inc.</h4>
+            <h3>Indah</h3>
+            <h4>Mahasiswi, Surabaya</h4>
           </figcaption>
         </figure>
         <figure class="snip1533">
           <figcaption>
             <blockquote>
-              <p>I'm killing time while I wait for life to shower me with meaning and happiness.</p>
+              <p>“Wah untung ada ngkost, mau pindah pindah kosan jd gampang tinggal cari ajaa disini hihi.”</p>
             </blockquote>
-            <h3>Ursula Gurnmeister</h3>
-            <h4>Facebook</h4>
+            <h3>Erwin</h3>
+            <h4>Mahasiswi, Surabaya</h4>
           </figcaption>
         </figure>
       </div>
@@ -245,19 +231,19 @@
         <figure class="snip1533">
           <figcaption>
             <blockquote>
-              <p>If you do the job badly enough, sometimes you don't get asked to do it again.</p>
+              <p>“Karena sempet mau pindah kost,temen nyaranin cek BeKost. Ternyata cukup banyak pilihan.”</p>
             </blockquote>
-            <h3>Wisteria Ravenclaw</h3>
-            <h4>Google Inc.</h4>
+            <h3>Andreas</h3>
+            <h4>Mahasiswa, Surabaya</h4>
           </figcaption>
         </figure>
         <figure class="snip1533">
           <figcaption>
             <blockquote>
-              <p>I'm killing time while I wait for life to shower me with meaning and happiness.</p>
+              <p>“Sempet nyari tempat tinggal kost di sekitar SMK Telkom Purwokerto, ternyata bisa nemu juga."</p>
             </blockquote>
-            <h3>Ursula Gurnmeister</h3>
-            <h4>Facebook</h4>
+            <h3>Dwioka</h3>
+            <h4>Siswa, Surabaya</h4>
           </figcaption>
         </figure>
       </div>
@@ -265,189 +251,6 @@
   </section>
 
   <!-- End Testimoni -->
-
-
-
-  {{--
-  <div class="top footer_v1">
-    <div class="subscribe" id="contact">
-      <h1>Kontak Developer</h1>
-      <p>Hubungi kami jika kamu memiliki masalah pada website</p>
-      <p>Hubungi kami jika kamu ingin mengenal lebih jauh dengan developer</p>
-      <div class="mirr">
-        <div class="input flex">
-          <input type="email" placeholder="Your Email address">
-          <button class="flex1">
-            <span>Subscribe</span>
-            <i class="fas fa-arrow-circle-right"></i>
-          </button>
-        </div>
-      </div>
-    </div>
-  </div> --}}
-
-
-
-  <!-- Footer -->
-  {{-- default footer --}}
-  {{-- <footer>
-    <div class="container top">
-      <div class="content grid top">
-        <div class="box">
-          <h2>Services</h2>
-          <div class="icon flex">
-            <div class="i">
-              <i class="fas fa-map-marker-alt"></i>
-            </div>
-            <div class="text">
-              <h3>Address</h3>
-              <p>SMK TELKOM</p>
-            </div>
-          </div>
-          <div class="icon flex">
-            <div class="i">
-              <i class="fas fa-phone"></i>
-            </div>
-            <div class="text">
-              <h3>Phone</h3>
-              <p>+123 456 7898</p>
-            </div>
-          </div>
-          <div class="icon flex">
-            <div class="i">
-              <i class="far fa-envelope"></i>
-            </div>
-            <div class="text">
-              <h3>Email</h3>
-              <p>hello@muziro.com</p>
-            </div>
-          </div>
-        </div>
-        <div class="box">
-          <h2>Services</h2>
-          <div class="icon flex">
-            <div class="i">
-              <i class="fas fa-map-marker-alt"></i>
-            </div>
-            <div class="text">
-              <h3>Address</h3>
-              <p>SMK TELKOM</p>
-            </div>
-          </div>
-          <div class="icon flex">
-            <div class="i">
-              <i class="fas fa-phone"></i>
-            </div>
-            <div class="text">
-              <h3>Phone</h3>
-              <p>+123 456 7898</p>
-            </div>
-          </div>
-          <div class="icon flex">
-            <div class="i">
-              <i class="far fa-envelope"></i>
-            </div>
-            <div class="text">
-              <h3>Email</h3>
-              <p>hello@muziro.com</p>
-            </div>
-          </div>
-        </div>
-        <div class="box">
-          <h2>Services</h2>
-          <div class="icon flex">
-            <div class="i">
-              <i class="fas fa-map-marker-alt"></i>
-            </div>
-            <div class="text">
-              <h3>Address</h3>
-              <p>SMK TELKOM</p>
-            </div>
-          </div>
-          <div class="icon flex">
-            <div class="i">
-              <i class="fas fa-phone"></i>
-            </div>
-            <div class="text">
-              <h3>Phone</h3>
-              <p>+123 456 7898</p>
-            </div>
-          </div>
-          <div class="icon flex">
-            <div class="i">
-              <i class="far fa-envelope"></i>
-            </div>
-            <div class="text">
-              <h3>Email</h3>
-              <p>hello@muziro.com</p>
-            </div>
-          </div>
-        </div>
-        <div class="box">
-          <h2>Services</h2>
-          <div class="icon flex">
-            <div class="i">
-              <i class="fas fa-map-marker-alt"></i>
-            </div>
-            <div class="text">
-              <h3>Address</h3>
-              <p>SMK TELKOM</p>
-            </div>
-          </div>
-          <div class="icon flex">
-            <div class="i">
-              <i class="fas fa-phone"></i>
-            </div>
-            <div class="text">
-              <h3>Phone</h3>
-              <p>+123 456 7898</p>
-            </div>
-          </div>
-          <div class="icon flex">
-            <div class="i">
-              <i class="far fa-envelope"></i>
-            </div>
-            <div class="text">
-              <h3>Email</h3>
-              <p>hello@muziro.com</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </footer> --}}
-
-
-  {{-- figma footer --}}
-  {{-- <footer class="footer-distributed" id="kontak">
-    <div class="container">
-      <div class="footer-left">
-        <h3>BE<span> Kost</span></h3>
-        <p class="footer-company-name">Find a comfortable boarding house to live in while you are traveling wihtout the hassle
-          of bringing things from home  
-        </p>
-      </div>
-      <div class="footer-right">
-        <p class="footer-links">
-          <a href="#about">Tentang kami</a>
-          <a href="">Kost</a>
-          <a href="#testimonial">Testimoni</a>
-          <a href="#contact">Kontak</a>
-        </p>
-  
-        <p>Contact Us</p>
-  
-        <form action="#" method="post">
-  
-          <input type="text" name="email" placeholder="Email">
-          <textarea name="message" placeholder="Message"></textarea>
-          <button>Send</button>
-  
-        </form>
-  
-      </div>
-    </div>
-  </footer> --}}
 
 
   <footer class="footer-distributed">
