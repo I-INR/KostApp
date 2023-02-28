@@ -241,7 +241,7 @@ header.sticky ul li a {
 }
 
 .home {
-  background-image: url("../image/heroimg.jpg");
+  background-image: url("../image/heroimg.jpg')}}");
   height: 100vh;
   background-attachment: fixed;
   background-position: center;
@@ -421,7 +421,7 @@ p {
 /*------------about------------*/
 /*------------wrapper------------*/
 .wrapper {
-  background-image: url("../image/w.jpg");
+  background-image: url("../image/w.jpg')}}");
   height: 80vh;
   background-attachment: fixed;
   background-position: center;
@@ -615,7 +615,7 @@ p {
 }
 
 .timer.wrapper {
-  background-image: url("../image/w2.jpg");
+  background-image: url("../image/w2.jpg')}}");
 }
 
 .timer.about::after {
@@ -736,7 +736,7 @@ p {
 }
 
 .offer2.wrapper {
-  background-image: url("../image/w3.jpg");
+  background-image: url("../image/w3.jpg')}}");
   height: 90vh;
   background-attachment: scroll;
 }

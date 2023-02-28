@@ -35,7 +35,7 @@
               background-color: #f9a826;
               padding: 10px 30px;
             "
-          > <a href="#"
+          > <a href="/login"
           style="color: white;
                 font-weight: bold;">Login</a></li>
         </ul>

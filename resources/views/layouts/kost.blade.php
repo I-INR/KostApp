@@ -157,7 +157,7 @@
               </div>
             </div>
             <div class="right">
-              <img src="image/r.jpg" alt="">
+              <img src="image/r.jpg')}}" alt="">
             </div>
           </div>
         </div>
@@ -172,7 +172,7 @@
 
           <div class="content flex mtop">
             <div class="right1">
-                <img src="image/r.jpg" alt="">
+                <img src="image/r.jpg')}}" alt="">
               </div>
             <div class="left1 grid2">
               <div class="box">
@@ -278,7 +278,7 @@
                 aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
               <div class="admin flex">
                 <div class="img">
-                  <img src="image/c1.jpg" alt="">
+                  <img src="image/c1.jpg')}}" alt="">
                 </div>
                 <div class="text">
                   <h3>Hayam Muruk</h3>
@@ -299,7 +299,7 @@
                 aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
               <div class="admin flex">
                 <div class="img">
-                  <img src="image/c2.jpg" alt="">
+                  <img src="image/c2.jpg')}}" alt="">
                 </div>
                 <div class="text">
                   <h3>Ayman Jensi</h3>

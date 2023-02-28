@@ -26,6 +26,17 @@ Route::get('/kost', function () {
     return view('layouts.kost');
 });
 
+Route::get('/login', function () {
+    return view('layouts.template.auth-login');
+});
+
+Route::get('/user', function () {
+    return view('layouts.template.index');
+});
+
+Route::get('/user/edit', function () {
+    return view('layouts.template.form-element-input');
+});
 
 
 
