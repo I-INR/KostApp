@@ -29,7 +29,7 @@ use App\Http\Controllers\DetailkostController;
 Route::get('/', [DetailkostController::class,'index'])->name('home');
 // Route::get('/kost', [DetailkostController::class,'index'])->name('kost');
 Route::get('/kost', [DetailkostController::class,'kost'])->name('kost');
-Route::get('/kost{{ /$id }}', [DetailkostController::class,'show'])->name('kost.detail');
+Route::get('/kost/{$id}', [DetailkostController::class,'show'])->name('kost.detail');
 
 // Route::get('/login', [AuthController::class, 'index'])->name('login.view');
 // Route::post('/login', [AuthController::class, 'login'])->name('login.validate');
