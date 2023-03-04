@@ -1,9 +1,12 @@
 <?php
 
-namespace App\Http\Controllers\masing;
+namespace App\Http\Controllers\bykost;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
+use App\Models\Aboutkost;
+use App\Models\Fasilikost;
 
 class FasilikostController extends Controller
 {
@@ -14,7 +17,14 @@ class FasilikostController extends Controller
      */
     public function index()
     {
-        //
+        $iduser = Auth::user()->id;
+        $idkost = Aboutkost::where('iduser', $iduser)->first()->idfasili;
+        $data = Fasilikost::find($idkost);
+        return view('admin.fasilitas', [
+            'title' => 'Fasilitas Kost',
+            'data' => $data,
+        ]);
+        // return view('admin.fasilitas');
     }
 
     /**
@@ -67,9 +77,21 @@ class FasilikostController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(Request $request)
     {
-        //
+        // dd($request);
+        $data = Fasilikost::find($request->id);
+        $data->update([
+            'icebox' => $request->icebox == 'on' ? 1 : 0,
+            'wifi' => $request->wifi == 'on' ? 1 : 0,
+            'kitchen' => $request->kitchen == 'on' ? 1 : 0,
+            'bathroom' => $request->bathroom == 'on' ? 1 : 0,
+            'mattress' => $request->mattress == 'on' ? 1 : 0,
+            'cupboard' => $request->cupboard == 'on' ? 1 : 0,
+        ]);
+        $data->save();
+
+        return redirect()->back();
     }
 
     /**

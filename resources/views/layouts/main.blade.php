@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr">
 
 <head>
-  <title>S KOST</title>
+  <title>BE KOST</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
@@ -28,15 +28,19 @@
 
         <ul class="nav-menu">
           <li> <a href="#about">Tentang Kami</a> </li>
-          <li class="dropdown"> 
+          <li class="dropdown">
             <button class="drop-button" onclick="myFunction()">Kost
               <i class="fa fa-caret-down"></i>
             </button>
             <div class="drop-content" id="myDropdown">
-              <a href="{{ url('/kost_fuad') }}">Kost Fuad</a>
+                @foreach ($kosts as $kost)
+                    <a href="/kost/{{ $kost->id }}">{{ $kost->name }}</a>
+
+                @endforeach
+              {{-- <a href="{{ url('/kost_fuad') }}">Kost Fuad</a>
               <a href="{{ url('/kost_ilham') }}">Kost Ilham</a>
               <a href="{{ url('/kost_kombas') }}">Kost Kombas</a>
-              <a href="{{ url('/kost_arnest') }}">Kost Arnest</a>
+              <a href="{{ url('/kost_arnest') }}">Kost Arnest</a> --}}
             </div>
           </li>
           <li> <a href="#testimonial">Testimoni</a> </li>
@@ -200,7 +204,7 @@
 
 
   <!-- Testimoni -->
-  
+
   <section class="customer top" id="testimonial">
     <div class="container">
       <div class="heading">

@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Controllers\masing;
+namespace App\Http\Controllers\bykos;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;

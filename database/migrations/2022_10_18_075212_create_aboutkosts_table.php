@@ -15,6 +15,14 @@ return new class extends Migration
     {
         Schema::create('aboutkosts', function (Blueprint $table) {
             $table->id();
+            $table->integer('iduser');
+            $table->integer('idfasili');
+            $table->string('name');
+            $table->string('description');
+            $table->string('address');
+            $table->bigInteger('mainP')->nullable();
+            $table->bigInteger('secondP')->nullable();
+            $table->bigInteger('roomP')->nullable();
             $table->timestamps();
         });
     }

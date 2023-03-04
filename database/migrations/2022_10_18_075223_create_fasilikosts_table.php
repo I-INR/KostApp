@@ -15,6 +15,12 @@ return new class extends Migration
     {
         Schema::create('fasilikosts', function (Blueprint $table) {
             $table->id();
+            $table->boolean('bathroom')->default(false);
+            $table->boolean('kitchen')->default(false);
+            $table->boolean('mattress')->default(false);
+            $table->boolean('cupboard')->default(false);
+            $table->boolean('icebox')->default(false);
+            $table->boolean('wifi')->default(false);
             $table->timestamps();
         });
     }

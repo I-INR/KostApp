@@ -15,6 +15,11 @@ return new class extends Migration
     {
         Schema::create('footers', function (Blueprint $table) {
             $table->id();
+            $table->integer('idkost');
+            $table->string('name');
+            $table->string('noHP');
+            $table->string('email');
+            $table->string('address');
             $table->timestamps();
         });
     }

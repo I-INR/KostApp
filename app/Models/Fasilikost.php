@@ -8,4 +8,12 @@ use Illuminate\Database\Eloquent\Model;
 class Fasilikost extends Model
 {
     use HasFactory;
+    protected $fillable = [
+        'bathroom',
+        'kitchen',
+        'mattress',
+        'cupboard',
+        'icebox',
+        'wifi',
+    ];
 }

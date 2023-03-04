@@ -1,9 +1,12 @@
 <?php
 
-namespace App\Http\Controllers\masing;
+namespace App\Http\Controllers\bykost;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
+use App\Models\Aboutkost;
+
 
 class AboutkostController extends Controller
 {
@@ -14,7 +17,9 @@ class AboutkostController extends Controller
      */
     public function index()
     {
-        //
+        $iduser=Auth::user()->id;
+        $data = Aboutkost::where('iduser',$iduser)->first();
+        return view('admin.profil',['title' =>'Profil Kost','data'=>$data]);
     }
 
     /**
@@ -67,9 +72,21 @@ class AboutkostController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(Request $request)
     {
-        //
+        // dd($request->file('mainP'));
+        $data = Aboutkost::find($request->id);
+        $data->update([
+            'name' => $request->name,
+            'description' => $request->description,
+            'address' => $request->address,
+            // 'mainP' => $request ->mainP,
+            // 'secondP' => $request->secondP,
+            // 'roomP' => $request->roomP,
+        ]);
+        $data->save();
+
+        return redirect()->back();
     }
 
     /**
