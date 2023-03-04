@@ -26,8 +26,26 @@ Route::get('/main', function () {
 Route::get('/', function () {
     return view('layouts.main');
 });
+
+Route::get('/main/testimonial', function () {
+    return view('layouts.main')->with('section', 'testimonial');
+});
+Route::get('/main/about', function () {
+    return view('layouts.main')->with('section', 'about');
+});
+Route::get('/main/testimonial', function () {
+    return view('layouts.main')->with('section', 'testimonial');
+});
+
+Route::get('/login', function () {
+    return view('layouts.login');
+});
+
 Route::get('/kost_arnest', function () {
     return view('layouts.kost_arnest');
+});
+Route::get('/kost_arnest/main', function () {
+    return view('layouts.main');
 });
 Route::get('/kost_fuad', function () {
     return view('layouts.kost_fuad');
@@ -38,12 +56,3 @@ Route::get('/kost_ilham', function () {
 Route::get('/kost_kombas', function () {
     return view('layouts.kost_kombas');
 });
-
-
-
-
-// Route::get('/', function () {
-//     return view('welcome');
-// });
-
-

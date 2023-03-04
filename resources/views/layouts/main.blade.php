@@ -23,7 +23,7 @@
     <div class="container">
       <nav class="navbar flex1">
         <div class="sticky_logo logo">
-          <a href="#home">BE KOST</a>
+          <a href="/">BE KOST</a>
         </div>
 
         <ul class="nav-menu">
@@ -42,7 +42,7 @@
           <li> <a href="#testimonial">Testimoni</a> </li>
           <li> <a href="#kontak">Kontak</a></li>
           <li style="background-color: #f9a826; padding: 10px 30px; border-radius: 3px;">
-            <a href="#" style="color: white;">Login</a>
+            <a href="{{ url('/login') }}" style="color: white;">Login</a>
           </li>
         </ul>
 
@@ -139,7 +139,7 @@
       <div class="content grid mtop">
         <div class="box">
           <div class="img" data-aos="fade-up" data-aos-duration="1300">
-            <img src="{{ asset('assets/img/new1.jpg') }}" alt="">
+            <img src="{{ asset('assets/img/kost_1/Fuad2.jpg') }}" alt="">
           </div>
           <div class="text">
             <h3>Kost Fuad</h3>
@@ -152,7 +152,7 @@
 
         <div class="box">
           <div class="img" data-aos="fade-up" data-aos-duration="1400">
-            <img src="{{ asset('assets/img/new1.jpg') }}" alt="">
+            <img src="{{ asset('assets/img/kost_1/Ilhamm.jpeg') }}" alt="">
             {{-- <span>HOTEL</span> --}}
           </div>
           <div class="text">
@@ -166,7 +166,7 @@
 
         <div class="box">
           <div class="img" data-aos="fade-up" data-aos-duration="1500">
-            <img src="{{ asset('assets/img/new1.jpg') }}" alt="">
+            <img src="{{ asset('assets/img/kost_1/kombass.jpeg') }}" alt="">
             {{-- <span>HOTEL</span> --}}
           </div>
           <div class="text">
@@ -180,7 +180,7 @@
 
         <div class="box">
           <div class="img" data-aos="fade-up" data-aos-duration="1600">
-            <img src="{{ asset('assets/img/new1.jpg') }}" alt="">
+            <img src="{{ asset('assets/img/kost_1/Arnest.jpg') }}" alt="">
             {{-- <span>HOTEL</span> --}}
           </div>
           <div class="text">
@@ -200,7 +200,7 @@
 
 
   <!-- Testimoni -->
-
+  
   <section class="customer top" id="testimonial">
     <div class="container">
       <div class="heading">
@@ -250,10 +250,11 @@
     </div>
   </section>
 
+
   <!-- End Testimoni -->
 
 
-  <footer class="footer-distributed">
+  <footer class="footer-distributed" id="kontak">
     <div class="footer-left">
       <h3>BE<span> kost</span></h3>
       <p class="footer-links">

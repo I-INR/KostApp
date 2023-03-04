@@ -18,10 +18,10 @@
     <div class="container">
       <nav class="navbar flex1">
         <div class="sticky_logo logo">
-          <a href="#home">BE KOST</a>
+          <a href="/">BE KOST</a>
         </div>
         <ul class="nav-menu">
-          <li> <a href="#about">Tentang Kami</a> </li>
+          <li> <a href="{{ url('/main/about') }}">Tentang Kami</a> </li>
           <li class="dropdown"> 
             <button class="drop-button" onclick="myFunction()">Kost
               <i class="fa fa-caret-down"></i>
@@ -33,7 +33,7 @@
               <a href="{{ url('/kost_arnest') }}">Kost Arnest</a>
             </div>
           </li>
-          <li> <a href="#testimonial">Testimoni</a> </li>
+          <li> <a href="{{ url('./main/testimonial') }}">Testimoni</a> </li>
           <li> <a href="#kontak">Kontak</a></li>
           <li style="background-color: #f9a826; padding: 10px 30px; border-radius: 3px;">
             <a href="#" style="color: white;">Login</a>
@@ -120,9 +120,8 @@
         <div class="left">
           <h3>Kost Arnest, salah satu kost terbaik yang bisa kamu dapatkan   bersama kami
           </h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
-            aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-          <p> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <p>Kamu tidak akan dikenakan biaya admin saat melakukan pembayaran di BEkost. Serta ditangani secara profesional oleh tim Bekost. Selama kamu ngekost disini, ada tim dari Bekost yang akan merespon saran dan komplainmu.</p>
+          {{-- <p> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p> --}}
         </div>
         <div class="right">
           {{-- <img src="{{ asset('assets/img/b2.jpg') }}" alt=""> --}}
@@ -137,7 +136,7 @@
         <div class="container">
           <div class="heading">
             <h5>Ruang Kamar</h5>
-            <h2>Rekomendasi Kamar</h2>
+            <h2>Fasilitas Kamar</h2>
           </div>
           <div class="content flex mtop">
             <div class="left grid2">
@@ -175,7 +174,7 @@
             </div>
             <div class="right dm">
               <img src={{ asset('assets/img/kost_1/fasilitas.jpeg') }} alt="">
-              <button>Hubungi pemilik kost</button>
+              <button><a href="https://api.whatsapp.com/send?phone=6282266530061&text=Halo%20Kak%20Saya%20Mau%Bertanya%tentang%kost">Hubungi pemilik kost</a></button>
             </div>
           </div>
         </div>
@@ -229,6 +228,14 @@
           </div>
         </div>
       </section>
+
+      <div class="locati">
+        <div class="container">
+          <h1>Lokasi</h1>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3956.273119179214!2d109.2494613!3d-7.4350009!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e655e9d1768e4d1%3A0x959269c10818fa0c!2sSMK%20Telkom%20Purwokerto!5e0!3m2!1sid!2sid!4v1677191338561!5m2!1sid!2sid" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+      
     
 
 
@@ -240,14 +247,14 @@
     
           <div class="content grid  top">
             <div class="box">
-              <h2>Kost Muslimah</h2>
+              <h2>Kost Arnest</h2>
               <div class="icon flex">
                 <div class="i">
                   <i class="fas fa-map-marker-alt"></i>
                 </div>
                 <div class="text">
-                  <h3>Address</h3>
-                  <p>SMK TELKOM</p>
+                  <h3>Alamat</h3>
+                  <p><a href="https://goo.gl/maps/L7USrpnm4R1hJzHE6" target="_blank">SMK TELKOM</a></p>
                 </div>
               </div>
               <div class="icon flex">
@@ -255,8 +262,8 @@
                   <i class="fas fa-phone"></i>
                 </div>
                 <div class="text">
-                  <h3>Phone</h3>
-                  <p>+123 456 7898</p>
+                  <h3>Nomor</h3>
+                  <p><a href="https://wa.me/6282266530061?text=Halo20%Kak,20%saya20%mau20%order20%joki" target="_blank">+62 3456 7890</a></p>
                 </div>
               </div>
               <div class="icon flex">
@@ -270,14 +277,14 @@
               </div>
             </div>
             <div class="box">
-              <h2>Kost Muslimah</h2>
+              <h2>Kost Ilham</h2>
               <div class="icon flex">
                 <div class="i">
                   <i class="fas fa-map-marker-alt"></i>
                 </div>
                 <div class="text">
-                  <h3>Address</h3>
-                  <p>SMK TELKOM</p>
+                  <h3>Alamat</h3>
+                  <p><a href="https://goo.gl/maps/L7USrpnm4R1hJzHE6" target="_blank">SMK TELKOM</a></p>
                 </div>
               </div>
               <div class="icon flex">
@@ -285,8 +292,8 @@
                   <i class="fas fa-phone"></i>
                 </div>
                 <div class="text">
-                  <h3>Phone</h3>
-                  <p>+123 456 7898</p>
+                  <h3>Nomor</h3>
+                  <p><a href="https://wa.me/6282266530061?text=Halo20%Kak,20%saya20%mau20%order20%joki" target="_blank">+62 3456 7890</a></p>
                 </div>
               </div>
               <div class="icon flex">
@@ -300,14 +307,14 @@
               </div>
             </div>
             <div class="box">
-              <h2>Kost Muslimah</h2>
+              <h2>Kost Kombas</h2>
               <div class="icon flex">
                 <div class="i">
                   <i class="fas fa-map-marker-alt"></i>
                 </div>
                 <div class="text">
-                  <h3>Address</h3>
-                  <p>SMK TELKOM</p>
+                  <h3>Alamat</h3>
+                  <p><a href="https://goo.gl/maps/L7USrpnm4R1hJzHE6" target="_blank">SMK TELKOM</a></p>
                 </div>
               </div>
               <div class="icon flex">
@@ -315,8 +322,8 @@
                   <i class="fas fa-phone"></i>
                 </div>
                 <div class="text">
-                  <h3>Phone</h3>
-                  <p>+123 456 7898</p>
+                  <h3>Nomor</h3>
+                  <p><a href="https://wa.me/6282266530061?text=Halo20%Kak,20%saya20%mau20%order20%joki" target="_blank">+62 3456 7890</a></p>
                 </div>
               </div>
               <div class="icon flex">
@@ -330,14 +337,14 @@
               </div>
             </div>
             <div class="box">
-              <h2>Kost Muslimah</h2>
+              <h2>Kost Mas Fuad</h2>
               <div class="icon flex">
                 <div class="i">
                   <i class="fas fa-map-marker-alt"></i>
                 </div>
                 <div class="text">
-                  <h3>Address</h3>
-                  <p>SMK TELKOM</p>
+                  <h3>Alamat</h3>
+                  <p><a href="https://goo.gl/maps/L7USrpnm4R1hJzHE6" target="_blank">SMK TELKOM</a></p>
                 </div>
               </div>
               <div class="icon flex">
@@ -345,8 +352,8 @@
                   <i class="fas fa-phone"></i>
                 </div>
                 <div class="text">
-                  <h3>Phone</h3>
-                  <p>+123 456 7898</p>
+                  <h3>Nomor</h3>
+                  <p><a href="https://wa.me/6282266530061?text=Halo20%Kak,20%saya20%mau20%order20%joki" target="_blank">+62 3456 7890</a></p>
                 </div>
               </div>
               <div class="icon flex">

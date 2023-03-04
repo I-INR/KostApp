@@ -384,7 +384,7 @@ h3 {
 }
 
 .left h3 {
-  font-size: 30px;
+  font-size: 32px;
   color: #53280F;
   font-family: 'Poppins', sans-serif;
   margin-bottom: 20px;
@@ -469,6 +469,12 @@ p {
   width: 100%;
 }
 
+.left p {
+  font-size: 20px;
+}
+
+
+
 /*------------about------------*/
 /*------------wrapper------------*/
 .wrapper {
@@ -543,8 +549,8 @@ p {
 }
 
 .wrapper2 .box {
-  box-shadow: 0 0 20px 3px rgb(0 0 0 / 20%);
-  padding: 20px;
+  box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.104);
+  padding: 10px;
   transition: 0.5s;
 }
 
@@ -936,6 +942,19 @@ p {
   padding: 20px;
 }
 
+footer .text p{
+  cursor: pointer;
+  line-height: 30px;
+  color: #a4a4a4;
+  margin-bottom: 20px;
+  font-size: 15px;
+}
+
+footer .text a{
+  text-decoration: none;
+  color: #ECE3D2;
+}
+
 .blog img {
   width: 100%;
   height: 100%;
@@ -1006,6 +1025,10 @@ footer {
   border-radius: 50px;
   margin-right: 30px;
   padding: 10px;
+}
+
+footer {
+  margin-top: 100px;
 }
 
 footer .grid {
@@ -1153,29 +1176,10 @@ footer .content {
     width: 100%;
   }
 
-  /*------------area------------*/
-  /*------------offer2------------*/
   .offer2.wrapper {
     height: 100vh;
   }
-  @media only screen and (max-width: 634px) {
-
-    .testifix {
-      display: flex;
-      flex-direction: column;
-    }
-  }
-
-  .testifix {
-    display: flex;
-    flex-wrap: nowrap;
-    align-items: center;
-    justify-content: center;
-  }
   
-
-  /*------------offer2------------*/
-  /*------------customer------------*/
   .customer .mtop {
     max-width: 100%;
   }
@@ -1187,6 +1191,20 @@ footer .content {
   }
 
   /*------------footer------------*/
+}
+@media only screen and (max-width: 634px) {
+
+  .testifix {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.testifix {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
 }
 
 @media only screen and (max-width:512px) {
@@ -1390,8 +1408,32 @@ footer .content {
   outline: none;
   border: none;
   border-radius: 5px;
+  cursor: pointer;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   -ms-border-radius: 5px;
   -o-border-radius: 5px;
+}
+
+.dm a{
+  text-decoration: none;
+  color: #fff;
+  font-size: 16px;
+}
+
+.locati {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.locati h1 {
+  text-align: center;
+  font-size: 35px;
+  font-family: 'Poppins', sans-serif;
+  color: #53280F;
+  margin-bottom: 20px;
+}
+
+.locati iframe {
+  margin-top: 10px;
 }
