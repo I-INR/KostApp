@@ -18,7 +18,7 @@
     <div class="container">
       <nav class="navbar flex1">
         <div class="sticky_logo logo">
-          <a href="./">SKOST</a>
+          <a href="{{ route('home') }}">BE kost</a>
         </div>
         <ul class="nav-menu">
           <!-- <li> <a href="#home">Home</a> </li> -->
@@ -60,8 +60,9 @@
 
   <!-- <section class="home" id="home">
     <div class="container">
-      <h1>SKOST</h1>
-      <p>Discover the place where you have fun & enjoy a lot</p>
+      <h1>BE kost</h1>
+    <h1>SKOST</h1>
+>
        <div class="content grid">
         <div class="box">
           <span>ARRIVAL DATE </span> <br>
