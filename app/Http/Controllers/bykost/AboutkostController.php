@@ -17,7 +17,11 @@ class AboutkostController extends Controller
      */
     public function index()
     {
+        // $pegawai = Employee::with(['user'])->get();
+        // return view('pegawai/index', compact('pegawai'));
         $iduser=Auth::user()->id;
+        // $data = Aboutkost::with(['user'])->get();
+        // return view('admin.profil',['title' =>'Profil Kost','data'=>$data]);
         $data = Aboutkost::where('iduser',$iduser)->first();
         return view('admin.profil',['title' =>'Profil Kost','data'=>$data]);
     }

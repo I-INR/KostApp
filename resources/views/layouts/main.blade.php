@@ -143,7 +143,7 @@
       <div class="content grid mtop">
         <div class="box">
           <div class="img" data-aos="fade-up" data-aos-duration="1300">
-            <img src="{{ asset('assets/img/kost_1/Fuad2.jpg') }}" alt="">
+            <img src="{{ asset('assets/img/kost_1/kombass.jpeg') }}" alt="">
           </div>
           <div class="text">
             <h3>Kost Fuad</h3>
@@ -156,7 +156,7 @@
 
         <div class="box">
           <div class="img" data-aos="fade-up" data-aos-duration="1400">
-            <img src="{{ asset('assets/img/kost_1/Ilhamm.jpeg') }}" alt="">
+            <img src="{{ asset('assets/img/kost_1/Arnest.jpg') }}" alt="">
             {{-- <span>HOTEL</span> --}}
           </div>
           <div class="text">
